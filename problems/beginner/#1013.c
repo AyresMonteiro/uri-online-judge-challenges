@@ -7,13 +7,13 @@ int * readNumbers() {
 	return n;
 }
 
-int maior (int a, int b) {
+int greatest (int a, int b) {
 	return (a + b + abs(a - b))/2;
 }
 
 int main () {
 	int * n = readNumbers();
-	printf("%d eh o maior\n", maior(maior(n[0], n[1]), n[2]));
+	printf("%d eh o maior\n", greatest(greatest(n[0], n[1]), n[2]));
 	free(n);
 	return 0;
 }
